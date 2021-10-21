@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 Palindrome Checker
+  form(method="POST" action="/")
+    label(for="userText") Enter your text here:
+    br
+    input(type="text" id="userText" name="userText")
+    br
+    br
+    button(type="submit") Submit
+  if message
+    p=message
+  br
+  h4 Palindrome Examples
+  label(for="userText") 'Taco cat' is a Palindrome
+  br
+  br
+  label(for="userText") 'Madam' is a Palindrome
+  br
+  br
+  label(for="userText") Palindromes are words or phrases that are the same reversed if spaces and punctuation are ignored.
+
